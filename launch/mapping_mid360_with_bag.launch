@@ -13,7 +13,7 @@
 	<node pkg="rosbag" type="play" name="rosbag_play" 
 	      args="--clock --rate $(arg bag_rate) --delay $(arg bag_start_delay) $(arg bag_file)"
 	      output="screen"
-	      required="true" />
+	      required="false" />
 
 	<!-- Load FAST-LIO configuration -->
 	<rosparam command="load" file="$(find fast_lio)/config/mid360.yaml" />
